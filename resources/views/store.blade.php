@@ -63,7 +63,7 @@
                         <td>{{ $product->stock }}</td>
                         <td>LKR {{ number_format($product->price * $product->stock, 2) }}</td>
                         <td>
-                            @if($product->stock > 10)
+                            @if($product->stock > 5)
                                 <span class="in-stock">✓ In Stock</span>
                             @elseif($product->stock > 0)
                                 <span class="low-stock">⚠ Low Stock</span>

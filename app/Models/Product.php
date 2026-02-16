@@ -14,5 +14,6 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Product extends Model
 {
+    //security with $fillable
     protected $fillable = ['name', 'price', 'stock'];
 }
